@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.topo {
+    background: #ff76a3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.card-desc {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d62828;
+    margin-bottom: 12px;
+}
+
+.card-btn {
+    background: #ff76a3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-block;
+}
+
+.card-btn:hover {
+    background: #e05282;
+}
+
+.rodape {
+    background: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+}
+
+/*para deixar responsivo:*/
+/*telas médias (tablets)*/
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+
+    .topo h1 {
+        font-size: 28px;
+    }
+}
+
+/*telas pequenas (celulares)*/
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-price {
+        font-size: 16px;
+    }
+}
